@@ -22,8 +22,8 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	track := r.URL.Query().Get("track")
 	now := time.Now().UTC()
 	day := now.Weekday().String()
-	githubFile := "https://github.com/joey1123455/nzuri_server_week1/blob/main/api/index.go"
-	githubRepo := "https://github.com/joey1123455/nzuri_server_week1"
+	githubFile := "https://github.com/Kemzzy-Dev/Zuri_week1/blob/main/api/index.go"
+	githubRepo := "https://github.com/Kemzzy-Dev/Zuri_week1.git"
 	statusCode := 200
 	res := &ResObj{
 		SlackName:     slackName,
